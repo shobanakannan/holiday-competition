@@ -104,8 +104,20 @@ a:hover {
 
 }
 
-#paasBtn {
-    position: absolute;
-    top: 110px; right: 10px;
-    width: 297px;
+#paasBtn a {
+    -moz-border-radius: 5px 5px 5px 5px;
+    -moz-box-shadow: 0 1px 0 0 #F29C93 inset;
+    background: -moz-linear-gradient(center top , #E34C4C 5%, #AD1B1B 100%) repeat scroll 0 0 #FE1A00;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 6px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #B23E35;
+}
+
+#paasBtn a:hover {
+    background: -moz-linear-gradient(center top , #CE0100 5%, #FE1A00 100%) repeat scroll 0 0 #CE0100;
 }
