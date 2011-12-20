@@ -1,4 +1,4 @@
-Cloudbees competition - deploy and tweet to donate and win !
+CloudBees competition - deploy and tweet to donate and win !
 
 What you will need:
 - JDK6
@@ -14,14 +14,14 @@ To enter:
 and http://localhost:8080/ (the latter is what you will publish to the world).
 
 3. Construct your masterpiece (or leave it as it is if you like) - the more creative the better.
-If you do something cool/original, we’ll enter you 3x to win the iPad.
+If you do something cool / original, we’ll enter you 3x to win the iPad.
 Take a look at index.html for starters.
 
 4. Sign-up to www.cloudbees.com - you will need your account name (1), and api key/secret to go any further.
 Once signed up - you can go to https://grandcentral.cloudbees.com/user/keys to get your api keys.
 
-5. run "mvn bees:deploy" (will ask for your keys - paste them in from your account Security keys page as asked).
-It will ask your for your account name (from when you signed up) - also think of an app name (2).
+5. run "mvn bees:deploy" (will ask for your keys - paste them in from your account Security keys page as above).
+It will ask you for your account name (from when you signed up) - you will also need to think of an app name (2).
 
 6. App will deploy - browse to your deployed app: http://page_name(2).account_name(1).cloudbees.net/instructions.html
 
