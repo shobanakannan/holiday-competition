@@ -11,12 +11,12 @@
     <pluginRepositories>
     <pluginRepository>
      <id>bees-plugins-snapshots</id>
-     <url>http://repository-cloudbees.forge.cloudbees.com/public-snapshot/</url>
+     <url>http://repository-cloudbees.forge.cloudbees.com/public-release/</url>
      <releases>
-       <enabled>false</enabled>
+       <enabled>true</enabled>
      </releases>
      <snapshots>
-       <enabled>true</enabled>
+       <enabled>false</enabled>
      </snapshots>
     </pluginRepository>
     </pluginRepositories>
@@ -47,6 +47,7 @@
        <plugin>
          <groupId>com.cloudbees</groupId>
          <artifactId>bees-maven-plugin</artifactId>
+         <version>1.2.2</version>
        </plugin>
      </plugins>    
   </build>

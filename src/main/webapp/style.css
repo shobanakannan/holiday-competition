@@ -98,7 +98,7 @@ a:hover {
 }
 #loldogz h1 {
     font-family: Impact, sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
@@ -106,12 +106,15 @@ a:hover {
 
 #paasBtn a {
     -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
     -moz-box-shadow: 0 1px 0 0 #F29C93 inset;
+    background-color: #AD1B1B;
     background: -moz-linear-gradient(center top , #E34C4C 5%, #AD1B1B 100%) repeat scroll 0 0 #FE1A00;
+    background: -webkit-linear-gradient(center top , #E34C4C 5%, #AD1B1B 100%) repeat scroll 0 0 #FE1A00;
     color: #FFFFFF;
     display: inline-block;
     font-family: arial;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     padding: 4px 6px;
     text-decoration: none;
@@ -119,5 +122,6 @@ a:hover {
 }
 
 #paasBtn a:hover {
+    background-color: #CE0100;
     background: -moz-linear-gradient(center top , #CE0100 5%, #FE1A00 100%) repeat scroll 0 0 #CE0100;
 }
