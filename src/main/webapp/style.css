@@ -60,6 +60,7 @@ HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQ
     color: #AD1919;
     text-decoration: none;
     font-weight: bold;
+    line-height: 140%;
 }
 #photoContainer h1 {
     font-family: Arial, Helvetica, sans-serif;

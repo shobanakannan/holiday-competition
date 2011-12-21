@@ -5,8 +5,35 @@
     <title>LOLDOGS - by CloudBees</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+		var mpq = [];
+		mpq.push(["init", "1adf67abefa6caa85d734ae353e1b9f9"]);
+		(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";
+		b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+
+		"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];
+		a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push(
+		[f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links",
+		"track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<
+		d.length;c++){mpq[d[c]]=e(d[c])}})();
+	</script>
 </head>
 <body bgcolor="#06305a">
+<script language="javascript">
+    var openTryPaaSUrl = function(){ window.location.href=$("#tryBtn").attr("href"); };
+    var openDetailsURL = function(){ window.location.href=$("#detailsBtn").attr("href"); };
+    $(document).ready(function() {
+            mpq.track("App viewed", {"app": document.location.hostname});
+            $("#tryBtn").click(function(e) {
+                e.preventDefault();
+                mpq.track("TryPaaS clicked", {"app": document.location.hostname}, openTryPaaSUrl);
+            });
+            $("#detailsBtn").click(function(e) {
+                e.preventDefault();
+                mpq.track("Details clicked", {"app": document.location.hostname}, openDetailsURL);
+            });
+        }
+    );
+</script>
 <div id="outerContainer">
 <div id="photoContainer">
 <h1><div id="message">I just launched a Java app on CloudBees in minutes &#8211; and you can too!</div></h1>
@@ -18,14 +45,14 @@
 	<div id="center">
     	<div id="tweetIcon">
             <a href="https://twitter.com/share" class="twitter-share-button" data-text="My friend just launched a #Java app on @CloudBees #PaaS. [Pls RT with #CloudBeesJava for $1 to charity]" data-size="large" data-lang="en">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>!function(d,s,id){ var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
              <img src="images/tweet.gif" width="181" height="145" border="0"/>
         </div><!-- end tweetIcon -->
         <div id="tweetContainer">
         <p>For every <strong>Tweet</strong> of this page, CloudBees will donate $1 to the International Committee of the Red Cross. So ask your friends to share the love!
-            <a href="https://github.com/cloudbees/holiday-competition"><strong>See details</strong></a>.</p></div>
+            <a id="detailsBtn" href="http://www.cloudbees.com/cloudbees-new-years-challenge.cb"><strong>See details</strong></a>.</p></div>
         <!-- end tweetContainer -->
-        <div id="logoContainer"><div id="paasBtn"><a href="http://www.cloudbees.com/platform-overview.cb">Try the CloudBees PaaS</a></div><a href="http://CloudBees.com/"><img src="images/CloudBees-Holiday-Logo-tagline-small.gif" alt="CloudBees - The Java PaaS Company" width="153" height="103" border="0" /></a></div><!-- end logoContainer -->
+        <div id="logoContainer"><div id="paasBtn"><a href="http://www.cloudbees.com/platform-overview.cb" id="tryBtn">Try the CloudBees PaaS</a></div><a href="http://CloudBees.com/"><img src="images/CloudBees-Holiday-Logo-tagline-small.gif" alt="CloudBees - The Java PaaS Company" width="153" height="103" border="0" /></a></div><!-- end logoContainer -->
 	</div><!-- end center -->
 </div><!-- end contentContainer -->
 </div><!-- end outerContainer -->
