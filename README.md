@@ -18,11 +18,11 @@ If you do something cool / original, we’ll enter you 3x to win the iPad.
 Take a look at index.html for starters.
 
 4. Sign-up to www.cloudbees.com (or login if you already have an account)
-- https://grandcentral.cloudbees.com/account/signup
-- log in - and then click on the Applications icon
-- you will need to subscribe to the service (scroll down - you can pick the free one)
-- click on the Accounts link at the top, and then Security Keys on the left
-- you will need your account name (1), and api key/secret to go any further
+ * https://grandcentral.cloudbees.com/account/signup
+ * log in - and then click on the Applications icon
+ * you will need to subscribe to the service (scroll down - you can pick the free one)
+ * click on the Accounts link at the top, and then Security Keys on the left
+ * you will need your account name (1), and api key/secret to go any further
 
 5. run "mvn bees:deploy" (will ask for your keys - paste them in from your account Security keys page as above).
 It will ask you for your account name (from when you signed up) - you will also need to think of an app name (2).
